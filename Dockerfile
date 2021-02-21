@@ -6,6 +6,8 @@ RUN groupadd -r rocketchat \
     &&  useradd -r -g rocketchat rocketchat \
     &&  mkdir -p /app/uploads \
     &&  chown rocketchat.rocketchat /app/uploads
+    
+RUN apk add --no-cache gnupg
 
 
 # gpg: key 4FD08014: public key "Rocket.Chat Buildmaster <buildmaster@rocket.chat>" imported
