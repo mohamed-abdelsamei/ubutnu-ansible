@@ -10,7 +10,7 @@ RUN apt-get -o Acquire::Check-Valid-Until=false update
 
 RUN apt-get update 
 
-RUN apt-get install -y unzip build-essential python make g++ apt-utils 
+RUN apt-get install -y unzip zip build-essential python make g++ apt-utils 
 
 RUN apt-get install -y gcc python-dev libkrb5-dev && \
     apt-get install -y  git && \
