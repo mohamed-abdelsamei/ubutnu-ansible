@@ -18,4 +18,5 @@ RUN pip3 install --upgrade pip && \
     pip3 install --upgrade virtualenv && \
     pip3 install pywinrm[kerberos] && \
     pip3 install pywinrm && \
-    pip3 install ansible
+    pip3 install ansible && \
+    pip3 install boto3
