@@ -1,4 +1,4 @@
-FROM node:14-slim
+ FROM node:14-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -10,8 +10,7 @@ RUN apt-get -o Acquire::Check-Valid-Until=false update
 
 RUN apt-get update 
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends unzip build-essential python make g++ apt-utils \
+RUN apt-get install -y --no-install-recommends unzip build-essential python make g++ apt-utils \
     apt-get install -y gcc python-dev libkrb5-dev && \
     apt-get install git -y && \
     apt-get install python3-pip -y && \
@@ -21,4 +20,3 @@ RUN apt-get update && \
     pip3 install pywinrm[kerberos] && \
     pip3 install pywinrm && \
     pip3 install ansible
-
