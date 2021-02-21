@@ -12,10 +12,7 @@ RUN apt-get update
 
 RUN apt-get install -y unzip zip build-essential python make g++ apt-utils 
 
-RUN apt-get install -y gcc python-dev libkrb5-dev && \
-    apt-get install -y  git && \
-    apt-get install -y  python3-pip && \
-    apt-get install -y  awscli
+RUN apt-get install -y gcc python-dev libkrb5-dev git python3-pip awscli
     
 RUN pip3 install --upgrade pip && \
     pip3 install --upgrade virtualenv && \
